@@ -1,47 +1,124 @@
-.maincontainer {
-  display: grid;
-  grid-template-columns: 60% 40%;
+.navbar {
+  margin: auto;
+  width: 80vmax;
+  display: flex;
+  justify-content: space-between;
 }
-.leftitem {
+p {
+  margin: 0px;
+  font-family: "Poppins", sans-serif;
+}
+.leftnavbar {
   display: flex;
   justify-content: center;
-}
-.leftitem > img {
-  width: 67%;
-  height: 51%;
-  margin: 3vmax;
-  border: 2px dotted black;
-  border-radius: 20px;
-  padding: 5px;
-}
-
-.rightitem {
-    margin-top: 3vmax;
-  display: flex;
-  flex-direction: column;
   align-items: center;
-  border: 2px solid black;
-  border-radius: 10px;
-  width: 60%;
-  background-color: rgba(150, 195, 150, 0.71);
-  padding-left: 10px;
-  padding-right: 10px;
+}
+.rightnavbar {
+  display: flex;
+  align-items: center;
+}
+.rightnavbar > h3 {
+  padding-left: 15px;
+  color: #800080;
+}
+.profile {
+  padding-left: 15px;
+  display: flex;
+  align-items: center;
+}
+.leftnavbar > svg {
+  height: 60px;
+  width: 50px;
+}
+.samecolor {
+  color: #800080;
 }
 
-.rightitem > h3 {
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  font-size: 1.4vmax;
-  border-bottom: 1.4px solid black;
+.middlebody {
+  width: 70vmax;
+  margin: auto;
+}
+.middlebody > p {
+  margin-top: 2vmax;
+}
+.referrel {
+  margin-top: 2vmax;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.rightitem > img {
-  width: 88%;
-  height: 24%;
+.referrel > div > h4 {
+  margin: 0;
+  padding: 0.3vmax;
+}
+
+.code {
+  padding: 0.5vmax;
+  border: 2px solid rgba(0, 0, 0, 0.192);
+  border-radius: 15px;
+  display: flex;
+  justify-content: space-evenly;
+  margin: 0.4vmax;
+}
+
+.code > p {
+  font-weight: bolder;
+}
+.balance > p {
+  font-weight: bolder;
+}
+.middlebody > :first-child {
+  font-weight: bold;
+}
+
+.balance {
+  box-shadow: 2px 2px 2px 2px;
+  padding: 0.8vmax;
   border-radius: 15px;
 }
 
-.rightitem>p{
-    font-size: 1vmax;
-     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+.bottombody {
+  width: 70vmax;
+  margin: auto;
+  margin-top: 4vmax;
+}
+.datacard {
+  display: flex;
+}
 
+@media screen and (max-width: 600px) {
+  .referrel{
+    margin-top: 35px;
+    margin-bottom: 15px;
+  }
+  .rightnavbar > h3 {
+    display: none;
+  }
+  .navbar {
+    margin-left: 15px;
+  }
+  .rightnavbar {
+    margin-right: 15px;
+  }
+  .middlebody {
+    margin-left: 15px;
+  }
+  .bottombody {
+    margin-left: 15px;
+  }
+  .datacard {
+    flex-direction: column;
+  }
+  h3 {
+    font-size: 30px;
+    font-weight: bolder;
+  }
+  h4 {
+    font-size: 25px;
+  }
+  h2 {
+    font-size: 35px;
+  }
+   
 }

@@ -1,31 +1,61 @@
 import React from "react";
 import "./home.css";
+import AutoStoriesOutlinedIcon from "@mui/icons-material/AutoStoriesOutlined";
+import { data } from "./data.js";
+import Homecard from "./Homecard";
+import AccountCircleIcon from "@mui/icons-material/AccountCircle";
 const Home = () => {
+  console.log(data);
   return (
-    <div className="maincontainer">
-      <div className="leftitem">
-        <img
-          src="https://img.freepik.com/premium-vector/online-video-conference-colleagues-meeting-from-home_318237-65.jpg?w=2000"
-          alt="image"
-        />
+    <>
+      <div className="navbar">
+        <div className="leftnavbar">
+          <AutoStoriesOutlinedIcon />
+          <h2 className="samecolor">TuteDude</h2>
+        </div>
+        <div className="rightnavbar">
+          <h3>My Assignment</h3>
+          <h3>Chat with Mentor</h3>
+          <div className="profile samecolor">
+            <AccountCircleIcon />
+            <h3>ProfileName</h3>
+          </div>
+        </div>
       </div>
 
-      <div className="rightitem">
-        <h3>Company Description</h3>
-        <img
-          src="https://nextwhatbusiness.com/wp-content/uploads/2018/03/cake-shop-business.jpg"
-          alt="image"
-        />
-        <p>
-          Gnaga Confectionery is listed under sweet shops in rajendrea nagar sector 5,Sahibabad, Delhi.
-          From Cakes to brownies, and cupcakes to macarons, cake shops in Sahibabad, Delhi are your go-to-hotspon for treating your sweet toothe.
-        </p>
-        <h3>About the interviewer</h3>
-        <p>
-           <b>Madhuri Rao </b>is the operations manager of ganga confectioner pvt.ltd. She's ans Executive MBA in operations managaement, carrying along rich 14+ years of experience earned from companies like Amul, cadbuary, pizza hut,etc.
-        </p>
+      <div className="middlebody">
+        <p>UI/UX > Refer & Earn > Friends Referred </p>
+        <div className="referrel">
+          <div>
+            <h4 className="samecolor">Your Referrel Code</h4>
+            <div className="code">
+              <p>E</p>
+              <p>D</p>
+              <p>C</p>
+              <p>H</p>
+              <p>5</p>
+              <p>4</p>
+            </div>
+          </div>
+          <div className="balance">
+            <p className="samecolor">Wallet Balance</p>
+            <p>₹ 500</p>
+          </div>
+        </div>
       </div>
-    </div>
+
+      <div className="bottombody">
+        <h3 className="samecolor">Friends who enrolled(3)</h3>
+        <div className="datacard">
+          {data.map((item) => {
+            return <Homecard item={item} />;
+          })}
+        </div>
+        <div className="endbody">
+          <h3 className="samecolor">Terms & Conditions</h3>
+        </div>
+      </div>
+    </>
   );
 };
 

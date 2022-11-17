@@ -1,0 +1,62 @@
+.card{
+
+    width: 20vmax;
+    margin: 0.5vmax;
+    padding: 0.8vmax;
+    border-radius: 15px;
+    background: linear-gradient(270deg, #800080 0%, #FF864C 100%);
+ }
+ .paracolor{
+    color: #FFFFFF;
+
+ }
+ 
+
+
+.cardupper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.eachcourse{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1vmax;
+}
+.eachcoursepara{
+    padding: 0.4vmax;
+    margin: 6px;
+    border: 1px solid #FFFFFF;
+    border-radius: 15px; 
+    font-size: 14px;
+}
+.cardreferrelamount{
+    display: flex;
+    padding: 0.4vmax;
+    align-items: center;
+     
+}
+.cardreferrelamount>p{
+    padding-right: 0.6vmax;
+}
+
+ .cardreferrelamountitem2{
+    font-size: 1.3vmax;
+    font-weight: bold;
+ }
+
+ @media screen and (max-width: 600px) {
+    .card{
+        width: 100%;
+    }
+    p{
+        font-size: 25px;
+    }
+    .eachcoursepara{
+        font-size: 22px;
+    }
+    .cardreferrelamountitem2{
+        font-size: 22px;
+    }
+    
+ }

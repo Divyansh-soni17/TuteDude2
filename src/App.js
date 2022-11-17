@@ -1,19 +1,17 @@
-import './App.css';
-import Header from './component/Header.js';
+import "./App.css";
+ 
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import Home from './component/Home.js';
-import Upperheader from './component/Upperheader';
+import Home from "./component/Home.js";
+ 
 function App() {
   return (
-     <>
+    <>
       <Router>
-        <Upperheader/>
-        <Header/>
         <Routes>
-        <Route exact path="/" element={<Home />} />
+          <Route exact path="/" element={<Home />} />
         </Routes>
       </Router>
-     </>
+    </>
   );
 }
 
